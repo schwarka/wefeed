@@ -26,7 +26,13 @@ if "PRODUCTION" in os.environ:
 
 DEBUG = os.environ.get("DEBUG", False)
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "*.wefeedcb.us", "*.wefeedcbus.com"]
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "*.wefeedcb.us",
+    "*.wefeedcbus.com",
+    "*.zwink.net",
+]
 
 # Application definition
 
