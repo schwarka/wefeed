@@ -1,11 +1,8 @@
-import os
-
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.safestring import mark_safe
 
 from ..models import User
-
 
 admin.site.site_header = mark_safe("<div>Food Delivery Portal</div>")
 admin.site.site_title = "Make that food - Get that food"

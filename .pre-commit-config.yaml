@@ -9,7 +9,3 @@ repos:
     rev: 19.10b0
     hooks:
     -   id: black
--   repo: https://github.com/asottile/reorder_python_imports
-    rev: v1.8.0
-    hooks:
-    -   id: reorder-python-imports

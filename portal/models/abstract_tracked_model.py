@@ -1,6 +1,6 @@
+from django.db import models
 from crum import get_current_user
 from django.contrib.auth import get_user_model
-from django.db import models
 
 
 class TrackedModel(models.Model):

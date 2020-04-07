@@ -1,7 +1,6 @@
 from tastypie.authentication import ApiKeyAuthentication
 from tastypie.authentication import BasicAuthentication
 from tastypie.authentication import MultiAuthentication
-from tastypie.authorization import Authorization
 from tastypie.authorization import DjangoAuthorization
 from tastypie.resources import ModelResource
 
