@@ -20,7 +20,7 @@ from django.urls import path
 from tastypie.api import Api
 
 from portal.api import OrderResource
-
+from django.views.generic.base import RedirectView
 
 v1_api = Api(api_name="v1")
 v1_api.register(OrderResource())
@@ -29,4 +29,5 @@ v1_api.register(OrderResource())
 urlpatterns = [
     path("admin/", admin.site.urls),
     url(r"^api/", include(v1_api.urls)),
+    url(r"^$", RedirectView.as_view(url="/admin")),
 ]
