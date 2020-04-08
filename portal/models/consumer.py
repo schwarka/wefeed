@@ -16,7 +16,7 @@ class Consumer(TrackedModel):
 
     first_name = models.TextField()
     last_name = models.TextField()
-    phone = PhoneNumberField(null=False, blank=False)
+    phone = models.CharField(max_length=20, null=False, blank=False)
     email = models.TextField()
 
     address_line_one = models.TextField()

@@ -18,7 +18,7 @@ class Provider(TrackedModel):
 
     first_name = models.TextField(null=True, blank=True)
     last_name = models.TextField(null=True, blank=True)
-    phone = PhoneNumberField()
+    phone = models.CharField(max_length=20, null=False, blank=False)
 
     operations_name = models.TextField(
         "Operations point person name", blank=True, null=True
