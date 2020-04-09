@@ -100,3 +100,5 @@ The site should now be available at http://localhost:8000. The webserver support
 pip install pre-commit
 pre-commit install
 ```
+![ERD](graph-erd.png "PJM Data Miner")
+![State Machine](graph-transitions.png "PJM Data Miner")
